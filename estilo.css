@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+}
+
+footer img{
+    width: 200px;
+    hyphens: 200px;
+    margin-left: 50px;
+}
+
+h1{
+color: rgb(255, 0, 0);
+font-family: fantasy;
+text-align: center;
+}
+p {
+    color: black;
+}
+
+span {
+    color: black
+}
+.productos{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.bordeSuperior{
+    background-color: rgb(236, 65, 65);
+    text-align: center;
+
+}
+#myForm {
+    align-items: center;
+}
+.titulo-principal {
+    font-size: 25px;
+}
+.titulo-secundario {
+    font-size: 20px;
+}
+footer {
+    background-color: rgb(236, 65, 65);
+}
+.logo{
+    width: 300px;
+align-items: center;
+display: flex;
+
+}
+.navbar {
+    justify-content: flex-end;
+}
+.saludo {
+    background-color: brown;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+.contenedor-productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imagenCard {
+    width: 200px;
+}
+.card {
+    min-width: auto;
+    max-width: fit-content;
+}
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/*----POPUP CARRITO DE COMPRAS----*/
+.overlay { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+}
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+#popupBody{
+    height: auto;
+    border-radius: 50px;
+    width: 70%;
+    padding: 2%;
+    box-shadow: 0 0 5px #CCC;
+    background-color: #f1e2e2;
+    position: relative;
+    box-shadow: 0 0 10px white;
+}
+.cuerpo-carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.table h3 {
+    margin: 10px 0;
+}
+#cerrar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+    transition: all 200ms;
+}
+.titulo-productos {
+    font-size: 25px;
+    text-align: center;
+}
+.imagenes-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+.imagenes-productos img:hover {
+    transform: scale(1.2);
+    transition: all 0.1s ease-out;
+}
+.main-resumen {
+    background-color: #e9c7c7;
+}
+.resumen-titulo {
+    text-align: center;
+    color: black;
+}
+.resumen-subtitulo {
+    text-align: center;
+}
+.resumen-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.resumen-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1%;
+}
+.resumen-item img {
+    width: 70px;
+    margin: 10px 0;
+}
+.items-precio {
+    font-weight: 600;
+}
+.total-resumenCarrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resumen-total {
+    font-weight: 900;
+    padding: 20px 0;
+    width: 300px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+/*formulario contacto*/
+
+.contact_form {
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    padding-left: 30px;
+}
+
+
+input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: pink;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: pink;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    resize: none;
+}
+
+
+label {
+    display: block;
+    float: center;
+}
+
+
+.btn-enviar {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: rgb(236, 65, 65);
+    border-color: #11010d;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor: pointer;
+}
+
